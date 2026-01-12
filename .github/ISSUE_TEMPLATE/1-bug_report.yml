@@ -7,14 +7,12 @@ body:
         #### Important
         
         This bug tracker is for the beta macOS releases only. For stable releases go [here](https://github.com/JacobDev1/xl-converter/issues).
-
-        If you do not feel like filing an issue, email me the bug description at: contact@codepoems.eu
   - type: input
     id: version
     attributes:
       label: Version
       description: Version used, found in program's About tab.
-      placeholder: beta-25-01-12
+      value: beta-25-01-12
     validations:
       required: true
   - type: dropdown
