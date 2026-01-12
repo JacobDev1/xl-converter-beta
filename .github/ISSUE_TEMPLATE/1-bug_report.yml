@@ -12,7 +12,7 @@ body:
     attributes:
       label: Version
       description: Version used, found in program's About tab.
-      value: beta-25-01-12
+      value: beta-26-01-12
     validations:
       required: true
   - type: dropdown
