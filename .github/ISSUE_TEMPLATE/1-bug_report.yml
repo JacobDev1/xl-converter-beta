@@ -1,0 +1,65 @@
+name: Bug Report
+description: File a bug report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        #### Important
+        
+        This bug tracker is for the beta macOS releases only. For stable releases go [here](https://github.com/JacobDev1/xl-converter/issues).
+
+        If you do not feel like filing an issue, email me the bug description at: contact@codepoems.eu
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Version used, found in program's About tab.
+      placeholder: beta-25-01-12
+    validations:
+      required: true
+  - type: dropdown
+    id: arch
+    attributes:
+      description: Processor architecture of your Apple device.
+      label: Processor Type.
+      options:
+        - AppleSilicon (M series)
+        - Intel
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Description
+      description: Clear description of the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: A step-by-step instruction how to reproduce the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: Expected Result
+      description: What should happen.
+    validations:
+      required: true
+  - type: textarea
+    id: current-result
+    attributes:
+      label: Current Result
+      description: What happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information (Optional)
+      description: Any other relevant information, such as error messages, files or screenshots.
+    validations:
+      required: false
